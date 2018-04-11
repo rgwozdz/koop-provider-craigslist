@@ -16,7 +16,8 @@ module.exports = function() {
       apartments.ttl = ttl;
       apartments.metadata = {
         name: `${city} ${type}`,
-        description: `Craigslist ${type} listings proxied by https://github.com/dmfenton/koop-provider-craigslist`
+        description: `Craigslist ${type} listings proxied by https://github.com/dmfenton/koop-provider-craigslist`,
+        hasStaticData: false
       };
       callback(null, apartments);
     });
